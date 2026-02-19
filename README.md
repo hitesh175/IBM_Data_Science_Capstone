@@ -1,4 +1,3 @@
-Here is a **simpler, clean, recruiter-friendly README** version (less academic, more professional, easy to scan):
 
 ---
 
