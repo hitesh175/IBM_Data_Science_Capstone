@@ -1,8 +1,8 @@
 ````markdown
 # IBM Data Science Capstone — SpaceX Falcon 9 Landing Prediction 🚀
 
-This repository contains my work for the **IBM Data Science Professional Certificate Capstone**.  
-The project follows an end-to-end data science workflow to analyze **SpaceX Falcon 9 launches** and build models to **predict whether the first stage will successfully land** (a key factor in reusability and launch cost).
+This repository contains my work for the IBM Data Science Professional Certificate Capstone.  
+The project follows an end-to-end data science workflow to analyze SpaceX Falcon 9 launches and build models to predict whether the first stage will successfully land (a key factor in reusability and launch cost).
 
 ---
 
@@ -16,15 +16,15 @@ By predicting landing success using historical launch data, we can estimate miss
 ## What’s Inside
 
 ### ✅ Key Tasks Covered
-- Data collection via **API**
-- Data collection via **web scraping**
-- Data cleaning & **wrangling**
+- Data collection via API
+- Data collection via web scraping
+- Data cleaning & wrangling
 - Exploratory data analysis (EDA) using:
-  - **SQL**
-  - **visual analytics**
-- Interactive map-based analysis with **Folium**
+  - SQL
+  - visual analytics
+- Interactive map-based analysis with Folium
 - Machine learning classification to predict landing success
-- Interactive dashboard using **Plotly Dash**
+- Interactive dashboard using Plotly Dash
 
 ---
 
@@ -39,7 +39,7 @@ By predicting landing success using historical launch data, we can estimate miss
 | `EDA with Data Visualization.ipynb` | Visualize trends and insights using charts |
 | `Interactive Visual Analytics with Folium.ipynb` | Geospatial analysis & interactive maps |
 | `Machine Learning Prediction.ipynb` | Train/test ML models (classification) & compare performance |
-| `app.py` | **Dash** app for interactive visualization |
+| `app.py` | Dash app for interactive visualization |
 | `DS-Capstone-Presentation.pdf` | Final presentation slides |
 | `dataset_part_1.csv / dataset_part_2.csv / dataset_part_3.csv` | Processed datasets used across notebooks |
 | `Spacex.csv`, `spacex_web_scraped.csv`, `spacex_launch_geo*.csv` | Additional dataset exports |
@@ -49,13 +49,13 @@ By predicting landing success using historical launch data, we can estimate miss
 
 ## Tools & Tech Stack
 
-- **Python**
-- **Pandas, NumPy**
-- **Matplotlib, Seaborn**
-- **SQL**
-- **Folium**
-- **scikit-learn**
-- **Plotly, Dash**
+- Python
+- Pandas, NumPy
+- Matplotlib, Seaborn
+- SQL
+- Folium
+- scikit-learn
+- Plotly, Dash
 
 ---
 
@@ -144,7 +144,7 @@ The ML notebook builds a pipeline to:
 
 ## Author
 
-**Hitesh K R**
+Hitesh K R
 GitHub: [https://github.com/hitesh175](https://github.com/hitesh175)
 
 ---
@@ -152,8 +152,4 @@ GitHub: [https://github.com/hitesh175](https://github.com/hitesh175)
 ## License
 
 This project is for educational purposes as part of the IBM Data Science Professional Certificate.
-(If you want, add a formal license like MIT by including a `LICENSE` file.)
 
-```
-::contentReference[oaicite:0]{index=0}
-```
