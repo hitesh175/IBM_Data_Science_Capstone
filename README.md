@@ -1,93 +1,39 @@
----
+# SpaceX Falcon 9 Landing Prediction
 
-# 🚀 IBM Data Science Capstone – SpaceX Falcon 9 Landing Prediction
+An IBM Data Science Professional Certificate capstone exploring historical launch data and first-stage landing outcomes.
 
-This project was completed as part of the **IBM Data Science Professional Certificate**.
-The goal is to predict whether the **SpaceX Falcon 9 first stage will successfully land**, which directly impacts launch reusability and cost efficiency.
+## Workflow and notebook guide
 
----
+| Stage | Material |
+| --- | --- |
+| Collection | [API notebook](Data%20Collection%20API.ipynb), [web scraping](Data%20Collection%20with%20Web%20Scraping.ipynb) |
+| Preparation | [Data wrangling](Data%20Wrangling.ipynb) |
+| Exploration | [SQL analysis](EDA%20with%20SQL.ipynb), [visual analysis](EDA%20with%20Data%20Visualization.ipynb) |
+| Geography | [Folium notebook](Interactive%20Visual%20Analytics%20with%20Folium.ipynb) |
+| Modelling | [Machine learning](Machine%20Learning%20Prediction.ipynb) |
+| Communication | [Final presentation](DS-Capstone-Presentation.pdf), [saved plots](Plots/) |
 
-## 🎯 Project Objective
+An additional stock-data notebook is retained as separate coursework material.
 
-Using historical SpaceX launch data, build a machine learning model to predict first-stage landing success and analyze the factors influencing mission outcomes.
+## Explore locally
 
----
-
-## 📊 Project Workflow
-
-The project follows a complete end-to-end data science pipeline:
-
-* Data collection via API and web scraping
-* Data cleaning and preprocessing
-* Exploratory Data Analysis (EDA) using SQL and visual analytics
-* Geospatial analysis with Folium
-* Machine learning classification models
-* Interactive dashboard built with Plotly Dash
-
----
-
-## 🛠 Tech Stack
-
-* Python
-* Pandas, NumPy
-* Matplotlib, Seaborn
-* SQL
-* Folium
-* scikit-learn
-* Plotly Dash
-
----
-
-## 🤖 Machine Learning Models
-
-Multiple classification algorithms were trained and evaluated, including:
-
-* Logistic Regression
-* Support Vector Machine (SVM)
-* Decision Tree
-* K-Nearest Neighbors (KNN)
-
-Models were compared using cross-validation and performance metrics to select the best-performing approach.
-
----
-
-## 📈 Key Deliverables
-
-* Cleaned and structured datasets
-* EDA insights and visualizations
-* Trained ML classification models
-* Interactive landing prediction dashboard
-* Final presentation report
-
----
-
-## ▶️ How to Run
-
-Clone the repository:
+Install Python and Jupyter, then open the notebooks:
 
 ```bash
-git clone https://github.com/hitesh175/IBM_Data_Science_Capstone.git
-cd IBM_Data_Science_Capstone
-```
-
-Run notebooks:
-
-```bash
+python -m pip install jupyter
 jupyter notebook
 ```
 
-Run dashboard:
+Review each notebook's import/install cells and data paths before execution. A consolidated dependency file is not currently committed. External API and scraping steps may depend on network access and changes to their source services.
 
-```bash
-python app.py
-```
+## Dashboard
 
-Open the local link shown in the terminal (usually [http://127.0.0.1:8050/](http://127.0.0.1:8050/)).
+[app.py](app.py) provides a Plotly Dash interface for launch-site outcomes and payload comparisons. It visualises historical records; it does not serve the trained landing classifier.
 
----
+The script requires `spacex_launch_dash.csv`, which is **not included under that name**. Obtain the course dashboard dataset and verify its columns before running the app. Do not rename another CSV without checking its schema.
 
-## 👤 Author
+The dashboard also uses legacy Dash component imports and `run_server`; its dependency compatibility needs verification before a fresh installation can be considered reproducible.
 
-**Hitesh K R**
-GitHub: [https://github.com/hitesh175](https://github.com/hitesh175)
+## Interpretation
 
+Model comparisons and plots document the coursework experiment. Their scope is the supplied historical data; they do not establish operational launch predictions.
